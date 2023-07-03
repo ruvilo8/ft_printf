@@ -6,7 +6,7 @@
 /*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/30 19:01:52 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/01 20:34:34 by lolo             ###   ########.fr       */
+/*   Updated: 2023/07/03 19:09:52 by lolo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ ft_printf_flags(str, va_list arg, int i)
         len += ft_writehex(va_arg(arg, unsigned int), 'x');
     else if (str[i] == 'X')
         len += ft_writehex(va_arg(arg, unsigned int), 'X');
-
-    
+    else if (str[i] == 'p')
+        len += ft_pointer_add(va_arg(arg, unsigned long));
+    return(len);
 }
