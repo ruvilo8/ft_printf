@@ -6,13 +6,13 @@
 /*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/30 18:58:28 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/04 18:10:28 by lolo             ###   ########.fr       */
+/*   Updated: 2023/07/04 20:36:01 by lolo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <ft_printf.h>
 
-int ft_putchar(char c)
+intft_putchar(char c)
 {
     int value;
 
@@ -24,10 +24,10 @@ int ft_putchar(char c)
         return(-1);
 }
 
-int ft_putstr(char *s)
+int	ft_putstr(char *s)
 {
-    int i;
-    int value;
+    int	i;
+    int	value;
 
     i = 0;
     value = 0;
