@@ -6,11 +6,11 @@
 /*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/30 18:42:53 by lolo              #+#    #+#             */
-/*   Updated: 2023/06/30 20:04:02 by lolo             ###   ########.fr       */
+/*   Updated: 2023/07/04 18:11:33 by lolo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include <stdarg.h>
+#include <ft_printf.h>
 
 int ft_printf(const char *str, ...)
 {
