@@ -6,13 +6,13 @@
 /*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 17:45:45 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/04 20:52:05 by lolo             ###   ########.fr       */
+/*   Updated: 2023/07/05 20:37:07 by lolo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_printf.h>
+#include "ft_printf.h"
 
-int ft_putnbr_hex(unsigned long long n, char *base)
+void	ft_putnbr_hex(unsigned long long n, char *base)
 {
 	if (n < 16)
 		ft_putchar(base[n]);
@@ -25,11 +25,11 @@ int ft_putnbr_hex(unsigned long long n, char *base)
 		ft_putchar(n + 48);
 }
 
-int ft_writehex(unsigned long long n, char flag)
+int	ft_writehex(unsigned long long n, char flag)
 {
-	char    base_minx;
-	char    base_mayx;
-	int len;
+	char    *base_minx;
+	char    *base_mayx;
+	int		len;
 
 	base_minx = "0123456789abcdef";
 	base_mayx = "0123456789ABCDEF";
@@ -39,12 +39,11 @@ int ft_writehex(unsigned long long n, char flag)
 	else
 	{
 		if (flag == 'x')
-			len += ft_putnbr_hex(n, base_minx);
+			ft_putnbr_hex(n, base_minx);
 		if (flag == 'X')
-			len += ft_putnbr_hex(n, base_mayx);
+			ft_putnbr_hex(n, base_mayx);
 	}
-
-	return(len);
+	return (len);
 }
 
 int ft_pointer_add(unsigned long long n)

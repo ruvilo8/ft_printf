@@ -6,81 +6,80 @@
 /*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/30 18:58:28 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/04 20:36:01 by lolo             ###   ########.fr       */
+/*   Updated: 2023/07/05 20:49:38 by lolo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_printf.h>
+#include "ft_printf.h"
 
-intft_putchar(char c)
+int	ft_putchar(char c)
 {
-    int value;
+	int value;
 
-    value = 0;
-    value = write(1, &c, 1);
-    if (value == 1)
-        return(1);
-    else
-        return(-1);
+	value = 0;
+	value = write(1, &c, 1);
+	if (value == 1)
+		return(1);
+	else
+		return(-1);
 }
 
 int	ft_putstr(char *s)
 {
-    int	i;
-    int	value;
+	int	i;
+	int	value;
 
-    i = 0;
-    value = 0;
-    if (s == NULL)
-        return(-1)
-    while (s[i] != '\0')
-    {
-        value = write(1, &s[i], 1);
-        if (value == -1)
-            return(-1);
-        i++;
-    }
-    return(i);
+	i = 0;
+	value = 0;
+	if (s == NULL)
+		return (-1);
+	while (s[i] != '\0')
+	{
+		value = write(1, &s[i], 1);
+		if (value == -1)
+			return (-1);
+		i++;
+	}
+	return (i);
 }
 
-int ft_putnbr(int d)
+int	ft_putnbr(int d)
 {
-    int len;
+	int len;
 
-    len = 0;
-    if (d == -2147483648)
-        return (1, "-2147483648", 11);
-    if (d < '0')
-    {
-        len += putchar('-');
-        d = -d;
-    }
-    if (d > '9')
-        len += ft_putnbr(d / 10);
-    len += ft_putchar(d % 10 + 48);
-    return(len);
+	len = 0;
+	if (d == -2147483648)
+		return (write(1, "-2147483648", 11));
+	if (d < '0')
+	{
+		len += ft_putchar('-');
+		d = -d;
+	}
+	if (d > '9')
+		len += ft_putnbr(d / 10);
+	len += ft_putchar(d % 10 + 48);
+	return (len);
 }
 
-int ft_putnbr_u(unsigned long u)
+int	ft_putnbr_u(unsigned long u)
 {
-    int len;
+	int len;
 
-    len = 0;
-    if (u > 9)
-        len += ft_putnbr_u(u / 10);
-    len += ft_putnbr_u(u % 10 + 48);
-    return(len);
+	len = 0;
+	if (u > 9)
+		len += ft_putnbr_u(u / 10);
+	len += ft_putnbr_u(u % 10 + 48);
+	return (len);
 }
 
-int ft_putchar_percent(char c)
+int	ft_putchar_percent(void)
 {
-    int value;
+	int value;
 
-    value = 0;
-    value = write(1, "%", 1);
-    if (value == 1)
-        return(1);
-    else
-        return(-1);
+	value = 0;
+	value = write(1, "%", 1);
+	if (value == 1)
+		return (1);
+	else
+		return (-1);
 }
-
