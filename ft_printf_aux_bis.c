@@ -6,7 +6,7 @@
 /*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 17:45:45 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/05 20:37:07 by lolo             ###   ########.fr       */
+/*   Updated: 2023/07/06 16:26:08 by lolo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ void	ft_putnbr_hex(unsigned long long n, char *base)
 
 int	ft_writehex(unsigned long long n, char flag)
 {
-	char    *base_minx;
-	char    *base_mayx;
+	char	*base_minx;
+	char	*base_mayx;
 	int		len;
 
 	base_minx = "0123456789abcdef";
@@ -46,12 +46,12 @@ int	ft_writehex(unsigned long long n, char flag)
 	return (len);
 }
 
-int ft_pointer_add(unsigned long long n)
+int	ft_pointer_add(unsigned long long n)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	len += write(1, "0x", 2);
 	len += ft_writehex(n, 'x');
-	return(len);
+	return (len);
 }

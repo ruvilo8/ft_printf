@@ -6,7 +6,7 @@
 /*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/30 18:58:28 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/05 20:49:38 by lolo             ###   ########.fr       */
+/*   Updated: 2023/07/06 16:25:35 by lolo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_putchar(char c)
 {
-	int value;
+	int	value;
 
 	value = 0;
 	value = write(1, &c, 1);
@@ -45,7 +45,7 @@ int	ft_putstr(char *s)
 
 int	ft_putnbr(int d)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	if (d == -2147483648)
@@ -63,7 +63,7 @@ int	ft_putnbr(int d)
 
 int	ft_putnbr_u(unsigned long u)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	if (u > 9)
@@ -74,7 +74,7 @@ int	ft_putnbr_u(unsigned long u)
 
 int	ft_putchar_percent(void)
 {
-	int value;
+	int	value;
 
 	value = 0;
 	value = write(1, "%", 1);
