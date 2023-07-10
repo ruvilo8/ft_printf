@@ -6,17 +6,17 @@
 /*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/30 18:42:53 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/05 18:31:13 by lolo             ###   ########.fr       */
+/*   Updated: 2023/07/10 15:56:53 by lolo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_printf(const char *str, ...)
+int	ft_printf(const char *str, ...)
 {
-	int i;
-	int len;
-	va_list arg;
+	va_list	arg;
+	int		i;
+	int		len;
 
 	i = 0;
 	len = 0;
@@ -30,5 +30,5 @@ int ft_printf(const char *str, ...)
 		i++;
 	}
 	va_end(arg);
-	return(len);
-}   
+	return (len);
+}
