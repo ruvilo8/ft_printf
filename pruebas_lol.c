@@ -6,7 +6,7 @@
 /*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/10 15:48:16 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/10 17:10:08 by lolo             ###   ########.fr       */
+/*   Updated: 2023/07/10 17:56:48 by lolo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,26 @@ int	main(void)
 	printf("Unsigned:\t%u\n", 15);
 	ft_printf("ft_Unsigned:\t%u\n\n", 15);
 
-	printf("hexadecimal:\t%x\n", 15);
-	ft_printf("ft_hexadecimal:\t%x\n\n", 15);
+	printf("Integer:\t%i\n", 5);
+	printf("hexadecimal:\t%x\n", 5);
+	ft_printf("ft_hexadecimal:\t%x\n\n", 5);
 
-	printf("HEXADECIMAL:\t%X\n", 15);
-	ft_printf("ft_HEXADECIMAL:\t%X\n\n", 15);
+	printf("Integer:\t%i\n", 105);
+	printf("hexadecimal:\t%x\n", 105);
+	ft_printf("ft_hexadecimal:\t%x\n\n", 105);
+
+	printf("Integer:\t%i\n", 16);
+	printf("hexadecimal:\t%x\n", 16);
+	ft_printf("ft_hexadecimal:\t%x\n\n", 16);
+
+	printf("HEXADECIMAL:\t%X\n", 19);
+	ft_printf("ft_HEXADECIMAL:\t%X\n\n", 19);
+
+	printf("hexadecimal:\t%x\n", 150);
+	ft_printf("ft_hexadecimal:\t%x\n\n", 150);
+
+	printf("HEXADECIMAL:\t%X\n", 19);
+	ft_printf("ft_HEXADECIMAL:\t%X\n\n", 19);
 
 	printf("Percent:\t%%\n");
 	ft_printf("ft_percent:\t%%\n\n");

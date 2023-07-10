@@ -6,7 +6,7 @@
 /*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 17:45:45 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/06 16:26:08 by lolo             ###   ########.fr       */
+/*   Updated: 2023/07/10 17:56:39 by lolo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,11 @@ int	ft_writehex(unsigned long long n, char flag)
 			ft_putnbr_hex(n, base_minx);
 		if (flag == 'X')
 			ft_putnbr_hex(n, base_mayx);
+	}
+	while (n)
+	{
+		n /= 16;
+		++len;
 	}
 	return (len);
 }

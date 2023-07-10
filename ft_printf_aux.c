@@ -6,7 +6,7 @@
 /*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/30 18:58:28 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/06 16:29:50 by lolo             ###   ########.fr       */
+/*   Updated: 2023/07/10 17:27:23 by lolo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,12 +50,12 @@ int	ft_putnbr(int d)
 	len = 0;
 	if (d == -2147483648)
 		return (write(1, "-2147483648", 11));
-	if (d < '0')
+	if (d < 0)
 	{
 		len += ft_putchar('-');
 		d = -d;
 	}
-	if (d > '9')
+	if (d > 9)
 		len += ft_putnbr(d / 10);
 	len += ft_putchar(d % 10 + 48);
 	return (len);
@@ -68,7 +68,7 @@ int	ft_putnbr_u(unsigned long u)
 	len = 0;
 	if (u > 9)
 		len += ft_putnbr_u(u / 10);
-	len += ft_putnbr_u(u % 10 + 48);
+	len += ft_putchar(u % 10 + 48);
 	return (len);
 }
 
