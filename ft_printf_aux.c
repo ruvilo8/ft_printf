@@ -6,7 +6,7 @@
 /*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/30 18:58:28 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/06 16:25:35 by lolo             ###   ########.fr       */
+/*   Updated: 2023/07/06 16:29:50 by lolo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ int	ft_putchar(char c)
 	value = 0;
 	value = write(1, &c, 1);
 	if (value == 1)
-		return(1);
+		return (1);
 	else
-		return(-1);
+		return (-1);
 }
 
 int	ft_putstr(char *s)
