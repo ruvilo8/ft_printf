@@ -6,7 +6,7 @@
 /*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/10 15:48:16 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/11 16:15:44 by lolo             ###   ########.fr       */
+/*   Updated: 2023/07/11 17:29:58 by lolo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,4 +67,7 @@ int	main(void)
 
 	printf("Pointer:\t%p\n", &s);
 	ft_printf("ft_Pointer:\t%p\n", &s);
+
+	printf("Character:\t%c\nString:\t%s\nInteger:\t%i\nDecimal:\t%d\nUnsigned:\t%u\nhexadecimal:\t%x\nHexadecimal:\t%X\nPercent:\t%%\nPointer:\t%p\n", 67, s, -27, 150, 255, 255, 255, &s);
+	ft_printf("ft_Character:\t%c\nft_String:\t%s\nft_Integer:\t%i\nft_Decimal:\t%d\nft_Unsigned:\t%u\nft_hexadecimal:\t%x\nft_Hexadecimal:\t%X\nft_Percent:\t%%\nft_Pointer:\t%p\n", 67, s, -27, 150, 255, 255, 255, &s);
 }
