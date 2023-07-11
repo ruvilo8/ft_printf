@@ -6,7 +6,7 @@
 /*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/10 15:48:16 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/11 15:58:45 by lolo             ###   ########.fr       */
+/*   Updated: 2023/07/11 16:15:44 by lolo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,4 +65,6 @@ int	main(void)
 	printf("Percent:\t%%\n");
 	ft_printf("ft_percent:\t%%\n\n");
 
+	printf("Pointer:\t%p\n", &s);
+	ft_printf("ft_Pointer:\t%p\n", &s);
 }
