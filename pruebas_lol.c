@@ -6,7 +6,7 @@
 /*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/10 15:48:16 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/10 17:56:48 by lolo             ###   ########.fr       */
+/*   Updated: 2023/07/11 15:58:45 by lolo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,14 @@ int	main(void)
 	printf("Integer:\t%i\n", 5);
 	printf("hexadecimal:\t%x\n", 5);
 	ft_printf("ft_hexadecimal:\t%x\n\n", 5);
+
+	printf("Integer:\t%i\n", 27);
+	printf("hexadecimal:\t%x\n", 27);
+	ft_printf("ft_hexadecimal:\t%x\n\n", 27);
+
+	printf("Integer:\t%i\n", 27);
+	printf("hexadecimal:\t%X\n", 27);
+	ft_printf("ft_hexadecimal:\t%X\n\n", 27);
 
 	printf("Integer:\t%i\n", 105);
 	printf("hexadecimal:\t%x\n", 105);
