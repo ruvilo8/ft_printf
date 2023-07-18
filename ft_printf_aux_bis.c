@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_aux_bis.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: mruiz-vi <mruiz-vi@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 17:45:45 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/11 16:10:56 by lolo             ###   ########.fr       */
+/*   Updated: 2023/07/18 18:47:02 by mruiz-vi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ void	ft_putnbr_hex(unsigned long long n, char *base)
 		ft_putnbr_hex(n / 16, base);
 		ft_putnbr_hex(n % 16, base);
 	}
+	
 }
 
 int	ft_writehex(unsigned long long n, char flag)
@@ -31,7 +32,7 @@ int	ft_writehex(unsigned long long n, char flag)
 
 	base_minx = "0123456789abcdef";
 	base_mayx = "0123456789ABCDEF";
-	len = 0;
+	len = 1;
 	if (n == 0)
 		++len;
 	else if (flag == 'x')
