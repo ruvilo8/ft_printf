@@ -6,7 +6,7 @@
 /*   By: mruiz-vi <mruiz-vi@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/10 15:48:16 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/12 16:51:58 by mruiz-vi         ###   ########.fr       */
+/*   Updated: 2023/07/18 17:43:45 by mruiz-vi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,22 +20,18 @@ int	main(void)
 	int			y;
 
 	s = "Hello";
-	printf(" %s %s %s %s %s ", " - ", "", "4", "", "2 \n");
-	ft_printf(" %s %s %s %s %s ", " - ", "", "4", "", "2 \n");
-	x = printf(" %s %s %s %s %s ", " - ", "", "4", "", "2 \n");
-	y = ft_printf(" %s %s %s %s %s ", " - ", "", "4", "", "2 \n");
+	x = printf("%s %s %s %s %s ", " - ", "", "4", "", "2 \n");
+	y = ft_printf("%s %s %s %s %s ", " - ", "", "4", "", "2 \n");
+	printf("x = %i \n y = %i\n", x, y);
+
+	x = printf("\tNULL %s NULL \n", NULL);
+	y = ft_printf("\tNULL %s NULL \n", NULL);
 	printf("x = %i \n y = %i\n\n\n", x, y);
-	
-	printf(" NULL %s NULL \n", NULL);
-	ft_printf(" NULL %s NULL \n", NULL);
-	x = printf(" NULL %s NULL ", NULL);
-	y = ft_printf(" NULL %s NULL ", NULL);
-	printf("x = %i \n y = %i\n\n\n", x, y);
-	
+
 	printf("Character:\t%c \n", 67);
-	ft_printf("ft_Character:\t%c \n", 67);
+	ft_printf("Character:\t%c \n", 67);
 	x = printf("Character:\t%c \n", 67);
-	y = ft_printf("ft_Character:\t%c \n", 67);
+	y = ft_printf("Character:\t%c \n", 67);
 	printf("x = %i \n y = %i\n\n\n", x, y);
 
 	printf("String:\t%s \n", s);
@@ -107,7 +103,7 @@ int	main(void)
 	ft_printf("ft_hexadecimal:\t%x\n", 150);
 	x = printf("hexadecimal:\t%x\n", 150);
 	y = ft_printf("ft_hexadecimal:\t%x\n", 150);
-	printf("x = %i \n y = %i", x, y);
+	printf("x = %i \n y = %i\n\n", x, y);
 
 	printf("HEXADECIMAL:\t%X\n", 19);
 	ft_printf("ft_HEXADECIMAL:\t%X\n", 19);
