@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_aux.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mruiz-vi <mruiz-vi@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/30 18:58:28 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/18 17:41:12 by mruiz-vi         ###   ########.fr       */
+/*   Updated: 2023/07/24 18:57:28 by lolo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_putstr(char *s)
 	int	i;
 	int	value;
 
-	i = 0;
+	i = -1;
 	value = 0;
 	if (s == NULL)
 	{
@@ -38,10 +38,10 @@ int	ft_putstr(char *s)
 	}
 	while (s[i] != '\0')
 	{
+		i++;
 		value = write(1, &s[i], 1);
 		if (value == -1)
 			return (-1);
-		i++;
 	}
 	return (i);
 }
