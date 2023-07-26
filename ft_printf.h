@@ -6,7 +6,7 @@
 /*   By: lolo <lolo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 17:58:05 by lolo              #+#    #+#             */
-/*   Updated: 2023/07/06 15:59:08 by lolo             ###   ########.fr       */
+/*   Updated: 2023/07/26 18:24:06 by lolo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdarg.h>
 # include <unistd.h>
 
-void    ft_putnbr_hex(unsigned long long n, char *base);
+void	ft_putnbr_hex(unsigned long long n, char *base);
 int		ft_writehex(unsigned long long n, char flag);
 int		ft_pointer_add(unsigned long long n);
 int		ft_putchar(char c);
